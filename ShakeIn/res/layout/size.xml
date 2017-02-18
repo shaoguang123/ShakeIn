@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#ededed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffff">
+
+         <TextView
+             android:id="@+id/key3_textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="设置摇晃密码"
+             android:textColor="#000000"
+             android:textSize="24sp"
+             android:textStyle="bold" 
+             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+    
+   <com.github.glomadrian.dashedcircularprogress.DashedCircularProgress
+        android:id="@+id/size"
+        android:layout_marginTop="180dp"
+        custom:external_color="@color/size_external_circle"
+        custom:base_color="@color/size_base"
+        custom:min="0"
+        custom:max="100"
+        custom:progress_color="@color/size_external"
+        custom:progress_icon="@drawable/vader_icon"
+        custom:duration="100"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/android_image"
+            android:src="@drawable/e"
+            android:layout_height="64dp"
+            android:layout_width="64dp" />
+       
+
+    </com.github.glomadrian.dashedcircularprogress.DashedCircularProgress>
+
+
+
+     <TextView
+         android:id="@+id/num"
+         android:text="0%"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/size"
+         android:layout_centerHorizontal="true"
+         android:textColor="@color/black"
+         android:textSize="30sp" />
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textView2"
+         android:layout_centerHorizontal="true"
+         android:text="摇晃手机"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textSize="20sp" />
+
+
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textView1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="86dp"
+         android:text="请保持同一摇晃方式不变单手"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textSize="20sp" />
+
+</RelativeLayout>
